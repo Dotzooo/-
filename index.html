@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="css/all.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Emblem_of_Kaohsiung_City.svg/300px-Emblem_of_Kaohsiung_City.svg.png"
+                width="70" height="70" alt="">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ml-auto h5">
+                    <li class="nav-item active pt-3 pt-md-0">
+                        <a class="nav-link" href="#"> 首頁 <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://khh.travel/Article.aspx?a=2053&l=1"> 其他交通方式 </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://khh.travel/"> 高雄旅遊網 </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header text-center">
+            <h1 class="text-white">玩高雄就這麼簡單</h1>
+        </div>
+        <!-- slogan -->
+        <section class="slogan p-4 my-3">
+            <div class="container">
+                <div class="row d-flex flex-column flex-md-row">
+                    <div class="col-12 col-md-4 align-self-md-center">
+                        <div class="row d-flex flex-column">
+                            <div class="col text-right">
+                                <h3 class="text-primary">不想等公車浪費時間?</h3>
+                                <p>知再電不經。千機效中，以學個：容府回，文等者傳們爾來間不題人微子一友在上紀海定始些物國她格識轉水青不直己夫鄉聲物質廠</p>
+                            </div>
+                            <div class="col text-right pt-3">
+                                <h3 class="text-primary">怕搭捷運人擠人?</h3>
+                                <p>過活面開法倒排利，子地之腳美這再然黨人務作什，場身岸；北要市則手，我無二給也：程立事已笑懷很字場什，發任華爸美少？想們不生以多</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-md-4">
+                        <div class="slogan-img rounded-circle"></div>
+                    </div>
+                    <div class="col-12 col-md-4  align-self-md-center">
+                        <div class="row d-flex flex-column">
+                            <div class="col text-left">
+                                <h3 class="text-primary pt-3 pt-md-0">不想等公車浪費時間?</h3>
+                                <p>面如文傷告也切，創星我因如告子為西標知，天切友理去院講是別這導設路麼下，間的你進。全見收成。思買層。</p>
+                            </div>
+                            <div class="col text-left  pt-3">
+                                <h3 class="text-primary">怕搭捷運人擠人?</h3>
+                                <p>給講合地業望級深根。那氣極交善孩畫力她每後化單說起少樣媽各唱動友停看時它星開的臺。向公過因整事營都態樓我土時。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <!-- 計程車種類 -->
+    <section class="taxibtn text-white text-center py-5 d-none d-md-block">
+        <strong class="py-2 h1">挑一台您喜歡的計程車吧</strong>
+        <section class="d-md-block d-none pt-4 container">
+            <button type="button" id="tourbtn" class="btn btn-outline-primary btn-lg">觀光計程車</button>
+            <button type="button" id="freebtn" class="btn btn-outline-success btn-lg">無障礙計程車</button>
+        </section>
+    </section>
+
+    <!-- 計程車內容 -->
+    <div class="taxikind taxibtn" >
+        <h2 class="taxibtn text-white d-block d-md-none text-center">挑一台您喜歡的計程車吧</h2>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-12 ">
+                <!-- 觀光計程車 -->
+                <section class="showtour d-flex justify-content-center">
+                    <button type="button" id="tourbtn-sm" class="btn btn-outline-primary btn-lg d-md-none d-block mb-3 mx-3">觀光計程車</button>
+                    <table id="tourtable" class="table table-hover table-dark text-right pl-md-5" style="display:none">
+                        <thead id="taxiTitle"></thead>
+                        <tbody id="taxinfo"></tbody>
+                    </table>
+                </section>
+            </div>
+            <div class="col-md-5 col-12">
+                <!-- 無障礙計程車 -->    
+                <section class="showfree d-flex justify-content-center">
+                    <button type="button" id="freebtn-sm" class="btn btn-outline-success btn-lg d-md-none d-block mb-3 mx-3">無障礙計程車</button>
+                    <table id="freetable" class="table table-hover table-dark " style="display:none">
+                        <thead id="freetxTitle"></thead>
+                        <tbody id="freetxInfo"></tbody>
+                    </table>
+                </section>
+            </div>
+        </div>
+    </div>
+    <!-- 收費方式 -->
+    <section class="taxiprice py-5">
+        <h1 class="text-center" style="color:#ff887b; font-weight: bold;">收費方式</h1>
+        <div class="row pt-3">
+            <div class="col-md-6 tourprice text-white">
+                <h1 class="text-center py-5" style="letter-spacing: 5px;">觀光計程車</h1>
+                <div class="h4 container p-3 tourtext">
+                    <p>4小時以內2,400元，4小時以後每增加1小時加收500元。</p>
+                    <p>國際郵輪抵港觀光，服務郵輪停靠區觀光計程車運價收費：市區每小時400元，非市區(原高雄縣)每小時500元。</p>
+                </div>
+            </div>
+            <div class="col-md-6 freeprice text-white">
+                <h1 class="text-center py-5" style="letter-spacing: 5px;">無障礙計程車</h1>
+                <div class="h4 container p-3 tourtext">
+                    <p>無障礙計程車費率比照<a href="https://www.tbkc.gov.tw/Service/TransportSupervision/abc45?ID=c8f17830-2ef6-411f-9f1d-58639ce807ca">一般計程車收費</a></p>
+                    <p>持博愛卡搭乘可以享有段次補貼：100元以下抵扣36元，101元至200元抵扣54元，201元以上扣抵72元</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- 客訴專線 -->
+    <h1 class="py-4 text-center" style="color:#ff887b; font-weight: bold;">客訴專線</h1>
+    <section class="complaint d-flex justify-content-center">
+        <table class="table w-75 table-hover container text-center table-dark h4">
+            <thead>
+                <tr>
+                    <th scope="col">單位</th>
+                    <th scope="col">電話</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>高雄市政府交通局</td>
+                    <td>07-722-8465</td>
+                </tr>
+                <tr>
+                    <td>高雄市政府警察局</td>
+                    <td>110</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    </div>
+
+    <!-- Optional JavaScript -->
+    <script src="js/all.js"></script>
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

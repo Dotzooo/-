@@ -1,0 +1,99 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+
+.header {
+    background-image: url(https://khh.travel/FileArtPic.ashx?id=2905&w=2048&h=960);
+    height: 300px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    transition: all 0.5s;
+    border: 1px solid rgba(255, 255, 255, 0.5);
+    position: relative;
+}
+
+.header h1 {
+    z-index: 2;
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    line-height: 300px;
+    letter-spacing: 5px;
+    font-weight: bold;
+}
+
+.header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    opacity: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: all 0.4s;
+    transform: scale(0.5, 1);
+}
+
+.header:hover::before {
+    opacity: 1;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1, 1);
+}
+
+
+/* 
+
+.slogan-img-title {
+    margin-top: -20px;
+    margin-bottom: -20px;
+} */
+
+.slogan-img {
+    background-image: url(https://content.shopback.com/tw/wp-content/uploads/2018/02/25214604/shutterstock_598656824-1-e1519566480215.jpg);
+    min-height: 350px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+
+.slogan-text h1{
+    font-weight: bold;
+}
+
+
+.taxibtn{
+    background-color: #343a40;
+}
+.texi-contact{
+    word-break: break-all;
+}
+
+.tourprice{    
+    background-image: url(https://images.unsplash.com/photo-1530675669163-6f4c0f2bafd5?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1117&q=80);
+    
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.freeprice{
+    background-image: url(https://images.unsplash.com/photo-1468689210283-44a1b8ba20ce?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=500&q=60);
+    min-height: 500px;
+    background-size: cover;
+    background-position: center center;
+}
+
+.tourtext{
+    background:rgba(0,0,0,0.6);
+    line-height: 32px;
+    letter-spacing: 2px;
+}
+
+.complaint{
+    background-color: #343a40;
+}
